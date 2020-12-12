@@ -23,10 +23,14 @@ public class TestStringCalculator {
 	}
 
 	public void twoNumbersCommaDelimitedReturnSum() {
-		assertEquals(calculator.Add("1,2"), 3);
+		assertEquals(calculator.Add("1,2"), 1+2);
 	}
 	
 	public void unknownAmountNumbersReturnSum() {
 		assertEquals(calculator.Add("3,6,15,18,46,33"), 3+6+15+18+46+33);
+	}
+	
+	public void twoNumbersNewLineDelimitedReturnSum( ) {
+		assertEquals(calculator.Add("1\n2"), 1+2);
 	}
 }

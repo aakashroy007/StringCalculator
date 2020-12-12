@@ -1,8 +1,10 @@
 package main;
 
 public class StringCalculator {
+	private final String delimiter = ",|\\n";
+
 	public int Add(String numbers) {
-		String[] number = numbers.split(",");
+		String[] number = numbers.split(delimiter);
 		if (isEmpty(numbers)) {
 			return 0;
 		}
