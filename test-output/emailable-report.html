@@ -9,16 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">60</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">64</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">test.TestStringCalculator</td><td><a href="#m0">emptyStringReturnZero</a></td><td rowspan="1">1607807230326</td><td rowspan="1">6</td></tr><tr class="passedeven"><td><a href="#m1">multipleNegativeInputReturnsException</a></td><td rowspan="1">1607807230334</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">negativeInputReturnsException</a></td><td rowspan="1">1607807230338</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m3">oneNumberReturnValue</a></td><td rowspan="1">1607807230343</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">twoNumbersCommaDelimitedReturnSum</a></td><td rowspan="1">1607807230345</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">twoNumbersNewLineDelimitedReturnSum</a></td><td rowspan="1">1607807230348</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m6">unknownAmountNumbersReturnSum</a></td><td rowspan="1">1607807230351</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m7">whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers</a></td><td rowspan="1">1607807230354</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">test.TestStringCalculator</td><td><a href="#m0">countAddMethodInvoked</a></td><td rowspan="1">1607808414765</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m1">emptyStringReturnZero</a></td><td rowspan="1">1607808414776</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m2">multipleNegativeInputReturnsException</a></td><td rowspan="1">1607808414779</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">negativeInputReturnsException</a></td><td rowspan="1">1607808414781</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">oneNumberReturnValue</a></td><td rowspan="1">1607808414785</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">twoNumbersCommaDelimitedReturnSum</a></td><td rowspan="1">1607808414787</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">twoNumbersNewLineDelimitedReturnSum</a></td><td rowspan="1">1607808414789</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">unknownAmountNumbersReturnSum</a></td><td rowspan="1">1607808414792</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m8">whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers</a></td><td rowspan="1">1607808414795</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">test.TestStringCalculator#emptyStringReturnZero</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.TestStringCalculator#multipleNegativeInputReturnsException</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.TestStringCalculator#negativeInputReturnsException</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Negatives not allowed: [-1]
-	at main.StringCalculator.findDangerousInput(StringCalculator.java:47)
-	at main.StringCalculator.Add(StringCalculator.java:30)
-	at main.StringCalculator.Add(StringCalculator.java:17)
+<h2>Default test</h2><h3 id="m0">test.TestStringCalculator#countAddMethodInvoked</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.TestStringCalculator#emptyStringReturnZero</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.TestStringCalculator#multipleNegativeInputReturnsException</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.TestStringCalculator#negativeInputReturnsException</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Negatives not allowed: [-1]
+	at main.StringCalculator.findDangerousInput(StringCalculator.java:54)
+	at main.StringCalculator.Add(StringCalculator.java:33)
+	at main.StringCalculator.Add(StringCalculator.java:20)
 	at test.TestStringCalculator.negativeInputReturnsException(TestStringCalculator.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -49,10 +50,10 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.TestStringCalculator#oneNumberReturnValue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test.TestStringCalculator#twoNumbersCommaDelimitedReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">test.TestStringCalculator#twoNumbersNewLineDelimitedReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">test.TestStringCalculator#unknownAmountNumbersReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">test.TestStringCalculator#whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.TestStringCalculator#oneNumberReturnValue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.TestStringCalculator#twoNumbersCommaDelimitedReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.TestStringCalculator#twoNumbersNewLineDelimitedReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.TestStringCalculator#unknownAmountNumbersReturnSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test.TestStringCalculator#whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

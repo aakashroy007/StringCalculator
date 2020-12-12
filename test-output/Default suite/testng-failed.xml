@@ -6,7 +6,7 @@
       <class name="test.TestStringCalculator">
         <methods>
           <include name="init"/>
-          <include name="multipleNegativeInputReturnsException"/>
+          <include name="countAddMethodInvoked"/>
         </methods>
       </class> <!-- test.TestStringCalculator -->
     </classes>

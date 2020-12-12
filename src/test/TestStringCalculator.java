@@ -57,4 +57,12 @@ public class TestStringCalculator {
 		assertNotNull(exception);
 		assertEquals(exception.getMessage(), "Negatives not allowed: [-6, -18]");
 	}
+	
+	public void countAddMethodInvoked() throws Exception {
+		calculator.Add("1,\n");
+		assertEquals(calculator.GetCalledCount(), 1);
+		
+		calculator.Add("1,2,3");
+		assertEquals(calculator.GetCalledCount(), 2);
+	}
 }

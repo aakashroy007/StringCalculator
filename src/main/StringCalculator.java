@@ -5,7 +5,10 @@ import java.util.List;
 
 public class StringCalculator {
 
+	private int counter = 0;
+	
 	public int Add(String numbers) throws Exception {
+		counter ++;
 		String delimiter = ",|\n";
 		String numbersWithoutDellimiter = numbers;
 
@@ -36,6 +39,10 @@ public class StringCalculator {
 		}
 	}
 
+	public int GetCalledCount() {
+		return counter;
+	}
+	
 	private void findDangerousInput(String[] numbers) throws Exception {
 		List<String> negativeNumbers = new ArrayList<String>();
 		for (String num : numbers) {
