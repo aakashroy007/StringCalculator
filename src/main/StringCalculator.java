@@ -1,5 +1,8 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StringCalculator {
 
 	public int Add(String numbers) throws Exception {
@@ -16,14 +19,14 @@ public class StringCalculator {
 
 	public int Add(String numbers, String delimiter) throws Exception {
 		String[] number = numbers.split(delimiter);
-		
+
 		if (isEmpty(numbers)) {
 			return 0;
 		}
 		if (numbers.length() == 1) {
 			return stringToInt(numbers);
 		} else {
-			int sum = 0;		
+			int sum = 0;
 			findDangerousInput(number);
 			for (String num : number) {
 
@@ -32,12 +35,16 @@ public class StringCalculator {
 			return sum;
 		}
 	}
-	
+
 	private void findDangerousInput(String[] numbers) throws Exception {
+		List<String> negativeNumbers = new ArrayList<String>();
 		for (String num : numbers) {
 			if (stringToInt(num) < 0) {
-				throw new Exception("“negatives not allowed: "+ stringToInt(num));
+				negativeNumbers.add(num);
 			}
+		}
+		if (negativeNumbers.size() > 0) {
+			throw new RuntimeException("Negatives not allowed: " + negativeNumbers);
 		}
 	}
 

@@ -6,7 +6,7 @@
       <class name="test.TestStringCalculator">
         <methods>
           <include name="init"/>
-          <include name="emptyStringReturnZero"/>
+          <include name="multipleNegativeInputReturnsException"/>
         </methods>
       </class> <!-- test.TestStringCalculator -->
     </classes>
