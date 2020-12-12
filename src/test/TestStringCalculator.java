@@ -14,27 +14,32 @@ public class TestStringCalculator {
 		calculator = new StringCalculator();
 	}
 
-	public void emptyStringReturnZero() {
+	public void emptyStringReturnZero() throws Exception {
 		assertEquals(calculator.Add(""), 0);
 	}
 
-	public void oneNumberReturnValue() {
+	public void oneNumberReturnValue() throws Exception {
 		assertEquals(calculator.Add("1"), 1);
 	}
 
-	public void twoNumbersCommaDelimitedReturnSum() {
+	public void twoNumbersCommaDelimitedReturnSum() throws Exception {
 		assertEquals(calculator.Add("1,2"), 1+2);
 	}
 	
-	public void unknownAmountNumbersReturnSum() {
+	public void unknownAmountNumbersReturnSum() throws Exception {
 		assertEquals(calculator.Add("3,6,15,18,46,33"), 3+6+15+18+46+33);
 	}
 	
-	public void twoNumbersNewLineDelimitedReturnSum( ) {
+	public void twoNumbersNewLineDelimitedReturnSum( ) throws Exception {
 		assertEquals(calculator.Add("1\n2"), 1+2);
 	}
 	
-	public void whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers() {
+	public void whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers() throws Exception {
 		assertEquals(calculator.Add("//;\n1;2"), 1+2);
+	}
+	
+	@Test(expectedExceptions = Exception.class)
+	public void negativeInputReturnsException() throws Exception {
+		calculator.Add("-1");
 	}
 }

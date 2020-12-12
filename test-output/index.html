@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\aakas\AppData\Local\Temp\testng-eclipse--344370167\testng-customsuite.xml</span>
+                    <span>C:\Users\aakas\AppData\Local\Temp\testng-eclipse--1316095707\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="test.TestStringCalculator" class="method navigator-link" hash-for-method="emptyStringReturnZero">emptyStringReturnZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test.TestStringCalculator" class="method navigator-link" hash-for-method="negativeInputReturnsException">negativeInputReturnsException</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,6 +164,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="negativeInputReturnsException">
+                  </a> <!-- negativeInputReturnsException -->
+                  <span class="method-name">negativeInputReturnsException</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="oneNumberReturnValue">
                   </a> <!-- oneNumberReturnValue -->
                   <span class="method-name">oneNumberReturnValue</span>
@@ -197,7 +209,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\aakas\AppData\Local\Temp\testng-eclipse--344370167\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\aakas\AppData\Local\Temp\testng-eclipse--1316095707\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,36 +258,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'emptyStringReturnZero')
 data.setCell(0, 2, 'test.TestStringCalculator')
-data.setCell(0, 3, 6);
+data.setCell(0, 3, 4);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'twoNumbersNewLineDelimitedReturnSum')
+data.setCell(1, 1, 'oneNumberReturnValue')
 data.setCell(1, 2, 'test.TestStringCalculator')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'unknownAmountNumbersReturnSum')
+data.setCell(2, 1, 'negativeInputReturnsException')
 data.setCell(2, 2, 'test.TestStringCalculator')
-data.setCell(2, 3, 2);
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'oneNumberReturnValue')
+data.setCell(3, 1, 'whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers')
 data.setCell(3, 2, 'test.TestStringCalculator')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'twoNumbersCommaDelimitedReturnSum')
 data.setCell(4, 2, 'test.TestStringCalculator')
 data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers')
+data.setCell(5, 1, 'twoNumbersNewLineDelimitedReturnSum')
 data.setCell(5, 2, 'test.TestStringCalculator')
 data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'unknownAmountNumbersReturnSum')
+data.setCell(6, 2, 'test.TestStringCalculator')
+data.setCell(6, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 ms</span>
+              <span class="suite-total-time">Total running time: 10 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -308,27 +324,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">emptyStringReturnZero</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeInputReturnsException</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">oneNumberReturnValue</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">twoNumbersCommaDelimitedReturnSum</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">twoNumbersNewLineDelimitedReturnSum</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">unknownAmountNumbersReturnSum</span>
-                <span class="method-start">43 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
