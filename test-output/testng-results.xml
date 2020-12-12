@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-12T20:57:08 IST" name="Default suite" finished-at="2020-12-12T20:57:08 IST" duration-ms="53">
+  <suite started-at="2020-12-12T22:29:16 IST" name="Default suite" finished-at="2020-12-12T22:29:16 IST" duration-ms="55">
     <groups>
     </groups>
-    <test started-at="2020-12-12T20:57:08 IST" name="Default test" finished-at="2020-12-12T20:57:08 IST" duration-ms="53">
+    <test started-at="2020-12-12T22:29:16 IST" name="Default test" finished-at="2020-12-12T22:29:16 IST" duration-ms="55">
       <class name="test.TestStringCalculator">
-        <test-method is-config="true" signature="init()[pri:0, instance:test.TestStringCalculator@6b19b79]" started-at="2020-12-12T20:57:08 IST" name="init" finished-at="2020-12-12T20:57:08 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:test.TestStringCalculator@2a32de6c]" started-at="2020-12-12T22:29:16 IST" name="init" finished-at="2020-12-12T22:29:16 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="emptyStringReturnZero()[pri:0, instance:test.TestStringCalculator@6b19b79]" started-at="2020-12-12T20:57:08 IST" name="emptyStringReturnZero" finished-at="2020-12-12T20:57:08 IST" duration-ms="7" status="PASS">
+        <test-method signature="emptyStringReturnZero()[pri:0, instance:test.TestStringCalculator@2a32de6c]" started-at="2020-12-12T22:29:16 IST" name="emptyStringReturnZero" finished-at="2020-12-12T22:29:16 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyStringReturnZero -->
-        <test-method signature="oneNumberReturnValue()[pri:0, instance:test.TestStringCalculator@6b19b79]" started-at="2020-12-12T20:57:08 IST" name="oneNumberReturnValue" finished-at="2020-12-12T20:57:08 IST" duration-ms="1" status="PASS">
+        <test-method signature="oneNumberReturnValue()[pri:0, instance:test.TestStringCalculator@2a32de6c]" started-at="2020-12-12T22:29:16 IST" name="oneNumberReturnValue" finished-at="2020-12-12T22:29:16 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneNumberReturnValue -->
-        <test-method signature="twoNumbersCommaDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@6b19b79]" started-at="2020-12-12T20:57:08 IST" name="twoNumbersCommaDelimitedReturnSum" finished-at="2020-12-12T20:57:08 IST" duration-ms="1" status="PASS">
+        <test-method signature="twoNumbersCommaDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@2a32de6c]" started-at="2020-12-12T22:29:16 IST" name="twoNumbersCommaDelimitedReturnSum" finished-at="2020-12-12T22:29:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumbersCommaDelimitedReturnSum -->
-        <test-method signature="twoNumbersNewLineDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@6b19b79]" started-at="2020-12-12T20:57:08 IST" name="twoNumbersNewLineDelimitedReturnSum" finished-at="2020-12-12T20:57:08 IST" duration-ms="1" status="PASS">
+        <test-method signature="twoNumbersNewLineDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@2a32de6c]" started-at="2020-12-12T22:29:16 IST" name="twoNumbersNewLineDelimitedReturnSum" finished-at="2020-12-12T22:29:16 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumbersNewLineDelimitedReturnSum -->
-        <test-method signature="unknownAmountNumbersReturnSum()[pri:0, instance:test.TestStringCalculator@6b19b79]" started-at="2020-12-12T20:57:08 IST" name="unknownAmountNumbersReturnSum" finished-at="2020-12-12T20:57:08 IST" duration-ms="1" status="PASS">
+        <test-method signature="unknownAmountNumbersReturnSum()[pri:0, instance:test.TestStringCalculator@2a32de6c]" started-at="2020-12-12T22:29:16 IST" name="unknownAmountNumbersReturnSum" finished-at="2020-12-12T22:29:16 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unknownAmountNumbersReturnSum -->
+        <test-method signature="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers()[pri:0, instance:test.TestStringCalculator@2a32de6c]" started-at="2020-12-12T22:29:16 IST" name="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers" finished-at="2020-12-12T22:29:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers -->
       </class> <!-- test.TestStringCalculator -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

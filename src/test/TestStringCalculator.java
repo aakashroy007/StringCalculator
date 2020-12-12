@@ -33,4 +33,8 @@ public class TestStringCalculator {
 	public void twoNumbersNewLineDelimitedReturnSum( ) {
 		assertEquals(calculator.Add("1\n2"), 1+2);
 	}
+	
+	public void whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers() {
+		assertEquals(calculator.Add("//;\n1;2"), 1+2);
+	}
 }
