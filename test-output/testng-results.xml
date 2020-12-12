@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-13T02:56:54 IST" name="Default suite" finished-at="2020-12-13T02:56:54 IST" duration-ms="64">
+  <suite started-at="2020-12-13T04:38:32 IST" name="Default suite" finished-at="2020-12-13T04:38:32 IST" duration-ms="66">
     <groups>
     </groups>
-    <test started-at="2020-12-13T02:56:54 IST" name="Default test" finished-at="2020-12-13T02:56:54 IST" duration-ms="64">
+    <test started-at="2020-12-13T04:38:32 IST" name="Default test" finished-at="2020-12-13T04:38:32 IST" duration-ms="66">
       <class name="test.TestStringCalculator">
-        <test-method is-config="true" signature="init()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="init" finished-at="2020-12-13T02:56:54 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="init" finished-at="2020-12-13T04:38:32 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="countAddMethodInvoked()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="countAddMethodInvoked" finished-at="2020-12-13T02:56:54 IST" duration-ms="8" status="PASS">
+        <test-method signature="countAddMethodInvoked()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="countAddMethodInvoked" finished-at="2020-12-13T04:38:32 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- countAddMethodInvoked -->
-        <test-method signature="emptyStringReturnZero()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="emptyStringReturnZero" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="emptyStringReturnZero()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="emptyStringReturnZero" finished-at="2020-12-13T04:38:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyStringReturnZero -->
-        <test-method signature="multipleNegativeInputReturnsException()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="multipleNegativeInputReturnsException" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="ignoreNumberGreaterThan1000()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="ignoreNumberGreaterThan1000" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ignoreNumberGreaterThan1000 -->
+        <test-method signature="multipleNegativeInputReturnsException()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="multipleNegativeInputReturnsException" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleNegativeInputReturnsException -->
-        <test-method signature="negativeInputReturnsException()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="negativeInputReturnsException" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="negativeInputReturnsException()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="negativeInputReturnsException" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Negatives not allowed: [-1]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException: Negatives not allowed: [-1]
-at main.StringCalculator.findDangerousInput(StringCalculator.java:54)
+at main.StringCalculator.findDangerousInput(StringCalculator.java:56)
 at main.StringCalculator.Add(StringCalculator.java:33)
 at main.StringCalculator.Add(StringCalculator.java:20)
 at test.TestStringCalculator.negativeInputReturnsException(TestStringCalculator.java:45)
@@ -68,23 +72,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeInputReturnsException -->
-        <test-method signature="oneNumberReturnValue()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="oneNumberReturnValue" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="oneNumberReturnValue()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="oneNumberReturnValue" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneNumberReturnValue -->
-        <test-method signature="twoNumbersCommaDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="twoNumbersCommaDelimitedReturnSum" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="twoNumbersCommaDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="twoNumbersCommaDelimitedReturnSum" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumbersCommaDelimitedReturnSum -->
-        <test-method signature="twoNumbersNewLineDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="twoNumbersNewLineDelimitedReturnSum" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="twoNumbersNewLineDelimitedReturnSum()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="twoNumbersNewLineDelimitedReturnSum" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoNumbersNewLineDelimitedReturnSum -->
-        <test-method signature="unknownAmountNumbersReturnSum()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="unknownAmountNumbersReturnSum" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="unknownAmountNumbersReturnSum()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="unknownAmountNumbersReturnSum" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unknownAmountNumbersReturnSum -->
-        <test-method signature="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers()[pri:0, instance:test.TestStringCalculator@4fe767f3]" started-at="2020-12-13T02:56:54 IST" name="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers" finished-at="2020-12-13T02:56:54 IST" duration-ms="1" status="PASS">
+        <test-method signature="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers()[pri:0, instance:test.TestStringCalculator@2805c96b]" started-at="2020-12-13T04:38:32 IST" name="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers" finished-at="2020-12-13T04:38:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers -->

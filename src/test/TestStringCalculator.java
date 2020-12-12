@@ -65,4 +65,8 @@ public class TestStringCalculator {
 		calculator.Add("1,2,3");
 		assertEquals(calculator.GetCalledCount(), 2);
 	}
+	
+	public void ignoreNumberGreaterThan1000() throws Exception {
+		assertEquals(calculator.Add("2,1001"), 2);
+	}
 }
