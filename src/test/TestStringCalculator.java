@@ -25,4 +25,8 @@ public class TestStringCalculator {
 	public void twoNumbersCommaDelimitedReturnSum() {
 		assertEquals(calculator.Add("1,2"), 3);
 	}
+	
+	public void unknownAmountNumbersReturnSum() {
+		assertEquals(calculator.Add("3,6,15,18,46,33"), 3+6+15+18+46+33);
+	}
 }
