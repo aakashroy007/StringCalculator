@@ -76,4 +76,8 @@ public class TestStringCalculator {
 	public void whenMultipleDelimitersAreSpecified() throws Exception {
 		assertEquals(calculator.Add("//[*][%]\n1*2%3"), 6);
 	}
+	
+	public void whenVariableLengthMultipleDelimitersAreSpecified() throws Exception {
+		assertEquals(calculator.Add("//[**][%%]\n1**2%%3"), 6);
+	}
 }

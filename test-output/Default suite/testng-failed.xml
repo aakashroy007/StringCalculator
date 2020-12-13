@@ -6,7 +6,7 @@
       <class name="test.TestStringCalculator">
         <methods>
           <include name="init"/>
-          <include name="whenAnyLengthDelimiterIsSpecified"/>
+          <include name="whenVariableLengthMultipleDelimitersAreSpecified"/>
         </methods>
       </class> <!-- test.TestStringCalculator -->
     </classes>

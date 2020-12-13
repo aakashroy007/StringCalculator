@@ -90,7 +90,9 @@ public class StringCalculator {
 		String parsedDelimiter="[";
 		for(String current: delimiterArray) {
 			parsedDelimiter +=current;
+			parsedDelimiter += "|";
 		}
+		parsedDelimiter = parsedDelimiter.substring(0,parsedDelimiter.lastIndexOf("|"));
 		parsedDelimiter += "]";
 		return parsedDelimiter;
 		
