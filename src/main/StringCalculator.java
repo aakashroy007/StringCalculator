@@ -11,12 +11,23 @@ public class StringCalculator {
 		counter++;
 		String delimiter = ",|\n";
 		String numbersWithoutDellimiter = numbers;
+		int startIndex = 0;
+		int endIndex = 0;
 
 		if (numbers.startsWith("//")) {
-			int delimiterIndex = numbers.indexOf("//") + 2;
-			delimiter = numbers.substring(delimiterIndex, delimiterIndex + 1);
+			startIndex = numbers.indexOf("//") + 2;
+			endIndex = startIndex + 1;
+			delimiter = numbers.substring(startIndex, endIndex);
 			numbersWithoutDellimiter = numbers.substring(numbers.indexOf(";") + 2);
 		}
+		
+		if (numbers.indexOf("[") != -1) {
+			startIndex = numbers.indexOf("[");
+			endIndex = numbers.indexOf("]") + 1;
+			delimiter = numbers.substring(startIndex, endIndex);
+			numbersWithoutDellimiter = numbers.substring(numbers.indexOf("]") + 3);
+		}
+		
 		return Add(numbersWithoutDellimiter, delimiter);
 	}
 
@@ -32,6 +43,9 @@ public class StringCalculator {
 			int sum = 0;
 			findDangerousInput(number);
 			for (String num : number) {
+				if(num.isEmpty()) {
+					continue;
+				}
 				if (stringToInt(num)>1000) {
 					continue;
 				}					
@@ -48,6 +62,9 @@ public class StringCalculator {
 	private void findDangerousInput(String[] numbers) throws Exception {
 		List<String> negativeNumbers = new ArrayList<String>();
 		for (String num : numbers) {
+			if (num.isEmpty()) {
+				continue;
+			}
 			if (stringToInt(num) < 0) {
 				negativeNumbers.add(num);
 			}

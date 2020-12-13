@@ -2,7 +2,6 @@ package test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import main.StringCalculator;
@@ -57,16 +56,20 @@ public class TestStringCalculator {
 		assertNotNull(exception);
 		assertEquals(exception.getMessage(), "Negatives not allowed: [-6, -18]");
 	}
-	
+
 	public void countAddMethodInvoked() throws Exception {
 		calculator.Add("1,\n");
 		assertEquals(calculator.GetCalledCount(), 1);
-		
+
 		calculator.Add("1,2,3");
 		assertEquals(calculator.GetCalledCount(), 2);
 	}
-	
+
 	public void ignoreNumberGreaterThan1000() throws Exception {
 		assertEquals(calculator.Add("2,1001"), 2);
+	}
+
+	public void whenMultipleDelimitersAreSpecified() throws Exception {
+		assertEquals(calculator.Add("//[***]\\n1***2***3"), 6);
 	}
 }
