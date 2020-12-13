@@ -69,7 +69,11 @@ public class TestStringCalculator {
 		assertEquals(calculator.Add("2,1001"), 2);
 	}
 
+	public void whenAnyLengthDelimiterIsSpecified() throws Exception {
+		assertEquals(calculator.Add("//[***]\n1***2***3"), 6);
+	}
+	
 	public void whenMultipleDelimitersAreSpecified() throws Exception {
-		assertEquals(calculator.Add("//[***]\\n1***2***3"), 6);
+		assertEquals(calculator.Add("//[*][%]\n1*2%3"), 6);
 	}
 }

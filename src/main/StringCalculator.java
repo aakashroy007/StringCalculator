@@ -23,12 +23,12 @@ public class StringCalculator {
 		
 		if (numbers.indexOf("[") != -1) {
 			startIndex = numbers.indexOf("[");
-			endIndex = numbers.indexOf("]") + 1;
+			endIndex = numbers.lastIndexOf("]") + 1;
 			delimiter = numbers.substring(startIndex, endIndex);
-			numbersWithoutDellimiter = numbers.substring(numbers.indexOf("]") + 3);
+			numbersWithoutDellimiter = numbers.substring(numbers.lastIndexOf("]") + 2);
 		}
 		
-		return Add(numbersWithoutDellimiter, delimiter);
+		return Add(numbersWithoutDellimiter, parseMultipleDelimiter(delimiter));
 	}
 
 	public int Add(String numbers, String delimiter) throws Exception {
@@ -80,5 +80,19 @@ public class StringCalculator {
 
 	private boolean isEmpty(String numbers) {
 		return numbers.isEmpty();
+	}
+	
+	private String parseMultipleDelimiter(String delimiter) {
+		if (delimiter.indexOf("[")==-1) {
+			return delimiter;
+		}
+		String[] delimiterArray = delimiter.split("[|]");
+		String parsedDelimiter="[";
+		for(String current: delimiterArray) {
+			parsedDelimiter +=current;
+		}
+		parsedDelimiter += "]";
+		return parsedDelimiter;
+		
 	}
 }
